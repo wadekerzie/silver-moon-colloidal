@@ -988,7 +988,7 @@ ul { list-style: none; }
 }
 
 .faq-item.active .faq-answer {
-    max-height: 300px;
+    max-height: 500px;
 }
 
 .faq-answer p {
@@ -996,6 +996,373 @@ ul { list-style: none; }
     font-size: 0.9rem;
     color: var(--color-text-secondary);
     line-height: 1.7;
+}
+
+/* --- Yellow Accent (for colloidal silver color references) --- */
+.text-yellow {
+    color: #d4a847;
+    font-weight: 600;
+}
+
+/* --- Trust Badge --- */
+.trust-badge {
+    margin-bottom: 48px;
+}
+
+.trust-badge-inner {
+    display: inline-flex;
+    align-items: center;
+    gap: 14px;
+    padding: 12px 24px;
+    border: 1px solid rgba(212, 168, 71, 0.25);
+    border-radius: var(--radius);
+    background: rgba(212, 168, 71, 0.04);
+}
+
+.trust-badge-icon {
+    width: 28px;
+    height: 28px;
+    flex-shrink: 0;
+    color: #d4a847;
+}
+
+.trust-badge-text {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.trust-badge-title {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--color-text);
+    letter-spacing: 0.02em;
+}
+
+.trust-badge-sub {
+    font-size: 0.7rem;
+    color: #d4a847;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+}
+
+/* --- Authenticity Section --- */
+.section-authenticity {
+    background: var(--color-bg-elevated);
+}
+
+.authenticity-grid {
+    grid-template-columns: 1.1fr 0.9fr;
+}
+
+.authenticity-sub {
+    font-size: 1.05rem;
+    color: var(--color-text-secondary);
+    font-weight: 400;
+    margin-bottom: 20px;
+    font-style: normal;
+}
+
+.btn-inline {
+    width: auto;
+    margin-top: 8px;
+}
+
+.authenticity-findings {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.finding-card {
+    background: var(--color-bg-card);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius);
+    padding: 24px;
+    transition: var(--transition);
+}
+
+.finding-card:hover {
+    border-color: var(--color-border-hover);
+}
+
+.finding-number {
+    display: block;
+    font-family: var(--font-display);
+    font-size: 1.8rem;
+    font-weight: 600;
+    background: var(--gradient-accent);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 8px;
+}
+
+.finding-card p {
+    font-size: 0.85rem;
+    color: var(--color-text-secondary);
+    line-height: 1.6;
+    margin: 0;
+}
+
+.finding-card-highlight {
+    border-color: rgba(212, 168, 71, 0.2);
+    background: rgba(212, 168, 71, 0.04);
+    position: relative;
+    overflow: hidden;
+}
+
+.finding-card-color {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 100%;
+    background: linear-gradient(to bottom, #d4a847, #c49a3a);
+}
+
+.finding-card-highlight p {
+    padding-left: 8px;
+}
+
+/* --- Best Practices --- */
+.section-practices {
+    background: var(--color-bg);
+}
+
+.practices-intro {
+    max-width: 700px;
+    margin: -32px auto 56px;
+    text-align: center;
+    padding: 24px 32px;
+    background: rgba(212, 168, 71, 0.04);
+    border: 1px solid rgba(212, 168, 71, 0.15);
+    border-radius: var(--radius);
+}
+
+.practices-intro p {
+    font-size: 0.95rem;
+    color: var(--color-text-secondary);
+    line-height: 1.7;
+    margin: 0;
+}
+
+.practices-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
+.practice-card {
+    background: var(--color-bg-card);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius);
+    overflow: hidden;
+    transition: var(--transition);
+}
+
+.practice-card:hover {
+    border-color: var(--color-border-hover);
+}
+
+.practice-card-header {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 24px 24px 0;
+}
+
+.practice-number {
+    font-family: var(--font-display);
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--color-accent-dim);
+    opacity: 0.5;
+    flex-shrink: 0;
+}
+
+.practice-card-header h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--color-text);
+}
+
+.practice-card-body {
+    padding: 16px 24px 24px;
+}
+
+.practice-card-body p {
+    font-size: 0.85rem;
+    color: var(--color-text-secondary);
+    line-height: 1.7;
+    margin-bottom: 12px;
+}
+
+.practice-card-body p:last-child {
+    margin-bottom: 0;
+}
+
+.practice-highlight {
+    padding: 16px;
+    background: rgba(212, 168, 71, 0.06);
+    border-left: 3px solid #d4a847;
+    border-radius: 0 8px 8px 0;
+    font-size: 0.85rem;
+    color: var(--color-text-secondary);
+    line-height: 1.6;
+    margin: 12px 0;
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.practice-highlight-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #d4a847;
+    flex-shrink: 0;
+    margin-top: 6px;
+}
+
+.practice-cite {
+    font-size: 0.78rem !important;
+    color: var(--color-text-muted) !important;
+    font-style: italic;
+}
+
+.practice-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.practice-list li {
+    font-size: 0.85rem;
+    color: var(--color-text-secondary);
+    line-height: 1.6;
+    padding: 10px 0 10px 18px;
+    position: relative;
+    border-bottom: 1px solid var(--color-border);
+}
+
+.practice-list li:last-child {
+    border-bottom: none;
+}
+
+.practice-list li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 17px;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: var(--color-accent);
+}
+
+.practice-list-trouble li::before {
+    background: #d4a847;
+}
+
+/* --- Why Card Highlight --- */
+.why-card-highlight {
+    border-color: rgba(212, 168, 71, 0.2);
+    background: rgba(212, 168, 71, 0.04);
+}
+
+.why-card-highlight:hover {
+    border-color: rgba(212, 168, 71, 0.35);
+}
+
+.why-card-highlight .why-number {
+    color: #d4a847;
+    opacity: 0.6;
+}
+
+/* --- Testimonials --- */
+.section-testimonials {
+    background: var(--color-bg-elevated);
+}
+
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.testimonial-card {
+    background: var(--color-bg-card);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius);
+    padding: 32px;
+    transition: var(--transition);
+    display: flex;
+    flex-direction: column;
+}
+
+.testimonial-card:hover {
+    border-color: var(--color-border-hover);
+    transform: translateY(-2px);
+}
+
+.testimonial-stars {
+    display: flex;
+    gap: 4px;
+    margin-bottom: 20px;
+    color: #d4a847;
+}
+
+.testimonial-stars svg {
+    width: 16px;
+    height: 16px;
+}
+
+.testimonial-card blockquote {
+    font-size: 0.9rem;
+    color: var(--color-text-secondary);
+    line-height: 1.7;
+    font-style: normal;
+    margin-bottom: 24px;
+    flex: 1;
+}
+
+.testimonial-author {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding-top: 20px;
+    border-top: 1px solid var(--color-border);
+}
+
+.testimonial-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: rgba(139, 159, 212, 0.12);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--color-accent);
+    flex-shrink: 0;
+}
+
+.testimonial-author strong {
+    display: block;
+    font-size: 0.85rem;
+    color: var(--color-text);
+}
+
+.testimonial-author span {
+    font-size: 0.75rem;
+    color: var(--color-text-muted);
+}
+
+/* --- Footer 5-column --- */
+.footer-grid-5 {
+    grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
 }
 
 /* --- Contact --- */
@@ -1269,9 +1636,28 @@ ul { list-style: none; }
         grid-template-columns: repeat(2, 1fr);
     }
 
-    .footer-grid {
+    .footer-grid,
+    .footer-grid-5 {
         grid-template-columns: 1fr 1fr;
         gap: 32px;
+    }
+
+    .authenticity-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .practices-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .testimonials-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .testimonials-grid .testimonial-card:last-child {
+        grid-column: 1 / -1;
+        max-width: 400px;
+        margin: 0 auto;
     }
 }
 
@@ -1380,9 +1766,22 @@ ul { list-style: none; }
         padding: 40px 24px;
     }
 
-    .footer-grid {
+    .footer-grid,
+    .footer-grid-5 {
         grid-template-columns: 1fr;
         gap: 32px;
+    }
+
+    .practices-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .testimonials-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .testimonials-grid .testimonial-card:last-child {
+        max-width: none;
     }
 }
 
