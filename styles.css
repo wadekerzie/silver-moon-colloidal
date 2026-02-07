@@ -1020,8 +1020,10 @@ ul { list-style: none; }
 }
 
 .trust-badge-icon {
-    width: 28px;
-    height: 28px;
+    width: 18px;
+    height: 18px;
+    min-width: 18px;
+    max-width: 18px;
     flex-shrink: 0;
     color: #d4a847;
 }
