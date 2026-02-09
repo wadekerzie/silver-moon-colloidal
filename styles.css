@@ -1878,3 +1878,316 @@ ul { list-style: none; }
         height: 300px;
     }
 }
+
+/* --- Two-Column Product Grid --- */
+.products-grid-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+    .products-grid-2 {
+        grid-template-columns: 1fr;
+        max-width: 500px;
+    }
+}
+
+/* --- Coming Soon Badge --- */
+.product-coming-soon {
+    display: inline-block;
+    background: linear-gradient(135deg, rgba(212, 168, 71, 0.15), rgba(212, 168, 71, 0.05));
+    border: 1px solid rgba(212, 168, 71, 0.3);
+    color: #d4a847;
+    font-size: 0.7rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    padding: 6px 12px;
+    border-radius: 4px;
+    margin-bottom: 12px;
+}
+
+/* --- Product Best For Section --- */
+.product-best-for {
+    font-size: 0.8rem;
+    color: var(--color-text-secondary);
+    line-height: 1.6;
+    padding: 12px 16px;
+    background: var(--color-bg-elevated);
+    border-radius: var(--radius);
+    margin-bottom: 20px;
+    border-left: 3px solid var(--color-accent);
+}
+
+.product-best-for strong {
+    color: var(--color-text);
+}
+
+/* --- Comparison Table --- */
+.comparison-section {
+    margin-top: 64px;
+    padding-top: 40px;
+    border-top: 1px solid var(--color-border);
+}
+
+.comparison-title {
+    font-family: var(--font-display);
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.comparison-table-wrapper {
+    overflow-x: auto;
+    border-radius: var(--radius);
+    border: 1px solid var(--color-border);
+}
+
+.comparison-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.85rem;
+    min-width: 700px;
+}
+
+.comparison-table th,
+.comparison-table td {
+    padding: 14px 16px;
+    text-align: left;
+    border-bottom: 1px solid var(--color-border);
+}
+
+.comparison-table th {
+    background: var(--color-bg-elevated);
+    font-weight: 600;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--color-text);
+}
+
+.comparison-table th span {
+    font-size: 0.7rem;
+    font-weight: 400;
+    text-transform: none;
+    letter-spacing: 0;
+    color: var(--color-text-muted);
+    display: block;
+    margin-top: 2px;
+}
+
+.comparison-table tbody tr {
+    background: var(--color-bg-card);
+    transition: var(--transition);
+}
+
+.comparison-table tbody tr:hover {
+    background: var(--color-bg-card-hover);
+}
+
+.comparison-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.comparison-table .competitor-col {
+    color: var(--color-text-muted);
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.comparison-table .sm-col {
+    background: rgba(212, 168, 71, 0.03);
+}
+
+.comparison-table .smp-col {
+    background: rgba(212, 168, 71, 0.06);
+}
+
+.comparison-table .highlight {
+    color: var(--color-accent);
+}
+
+.comparison-table .price-row td {
+    font-size: 1rem;
+    font-weight: 600;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    border-top: 2px solid var(--color-border);
+}
+
+/* --- Electrode Advantage Section --- */
+.section-electrode-advantage {
+    background: linear-gradient(135deg, rgba(212, 168, 71, 0.03), rgba(212, 168, 71, 0.08));
+}
+
+.electrode-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 48px;
+    align-items: center;
+}
+
+@media (max-width: 900px) {
+    .electrode-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+}
+
+.electrode-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    margin-top: 32px;
+}
+
+@media (max-width: 600px) {
+    .electrode-stats {
+        grid-template-columns: 1fr;
+    }
+}
+
+.electrode-stat {
+    background: var(--color-bg-card);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius);
+    padding: 20px;
+    text-align: center;
+}
+
+.electrode-stat-number {
+    display: block;
+    font-family: var(--font-display);
+    font-size: 1.8rem;
+    font-weight: 600;
+    background: var(--gradient-accent);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 4px;
+}
+
+.electrode-stat-label {
+    font-size: 0.75rem;
+    color: var(--color-text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.electrode-comparison-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.electrode-comparison-card {
+    background: var(--color-bg-card);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius);
+    padding: 20px 24px;
+    transition: var(--transition);
+}
+
+.electrode-comparison-card:hover {
+    border-color: var(--color-border-hover);
+}
+
+.electrode-comparison-card.sm-card {
+    border-color: rgba(212, 168, 71, 0.3);
+    background: linear-gradient(135deg, rgba(212, 168, 71, 0.08), transparent);
+}
+
+.electrode-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.electrode-card-brand {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--color-text);
+}
+
+.electrode-comparison-card.sm-card .electrode-card-brand {
+    color: var(--color-accent);
+}
+
+.electrode-card-badge {
+    font-size: 0.65rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    padding: 4px 8px;
+    border-radius: 4px;
+    background: rgba(212, 168, 71, 0.15);
+    color: var(--color-accent);
+}
+
+.electrode-card-specs {
+    display: flex;
+    gap: 24px;
+}
+
+.electrode-card-spec {
+    display: flex;
+    flex-direction: column;
+}
+
+.electrode-card-spec-value {
+    font-family: var(--font-display);
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--color-text);
+}
+
+.electrode-comparison-card.sm-card .electrode-card-spec-value {
+    color: var(--color-accent);
+}
+
+.electrode-card-spec-label {
+    font-size: 0.7rem;
+    color: var(--color-text-muted);
+}
+
+.electrode-benefits {
+    margin-top: 32px;
+}
+
+.electrode-benefits h4 {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+
+.benefit-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.benefit-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 8px 0;
+    font-size: 0.9rem;
+    color: var(--color-text-secondary);
+    line-height: 1.5;
+}
+
+.benefit-list li::before {
+    content: "✓";
+    color: var(--color-accent);
+    font-weight: 600;
+    flex-shrink: 0;
+}
+
+/* --- Full-Width Button --- */
+.btn-full {
+    width: 100%;
+    text-align: center;
+}
