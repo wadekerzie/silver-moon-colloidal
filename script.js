@@ -127,4 +127,59 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    // --- Waitlist Modal ---
+    const waitlistModal = document.getElementById('waitlistModal');
+    const openWaitlistBtn = document.getElementById('openWaitlistModal');
+    const closeWaitlistBtn = document.getElementById('closeWaitlistModal');
+    const waitlistForm = document.getElementById('waitlistForm');
+
+    if (waitlistModal && openWaitlistBtn) {
+        openWaitlistBtn.addEventListener('click', () => {
+            waitlistModal.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        });
+
+        closeWaitlistBtn.addEventListener('click', () => {
+            waitlistModal.classList.remove('active');
+            document.body.style.overflow = '';
+        });
+
+        // Close on overlay click
+        waitlistModal.addEventListener('click', (e) => {
+            if (e.target === waitlistModal) {
+                waitlistModal.classList.remove('active');
+                document.body.style.overflow = '';
+            }
+        });
+
+        // Close on Escape key
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && waitlistModal.classList.contains('active')) {
+                waitlistModal.classList.remove('active');
+                document.body.style.overflow = '';
+            }
+        });
+
+        // Form submission
+        if (waitlistForm) {
+            waitlistForm.addEventListener('submit', (e) => {
+                e.preventDefault();
+                const btn = waitlistForm.querySelector('button[type="submit"]');
+                const originalText = btn.textContent;
+                btn.textContent = 'You\'re on the list!';
+                btn.style.background = 'linear-gradient(135deg, #4ade80, #22c55e)';
+                btn.disabled = true;
+
+                setTimeout(() => {
+                    waitlistModal.classList.remove('active');
+                    document.body.style.overflow = '';
+                    btn.textContent = originalText;
+                    btn.style.background = '';
+                    btn.disabled = false;
+                    waitlistForm.reset();
+                }, 2500);
+            });
+        }
+    }
+
 });
