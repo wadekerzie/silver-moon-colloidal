@@ -302,7 +302,7 @@ ul {
     justify-content: center;
     text-align: center;
     overflow: hidden;
-    padding: 100px 24px 80px;
+    padding: 100px 24px 140px;
 }
 
 .hero-bg {
@@ -412,7 +412,7 @@ ul {
 
 .hero-scroll {
     position: absolute;
-    bottom: 40px;
+    bottom: 24px;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
