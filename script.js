@@ -94,12 +94,14 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    // --- Smooth Scroll for Anchor Links ---
+    // --- Smooth Scroll for Anchor Links (same-page only) ---
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', (e) => {
-            e.preventDefault();
-            const target = document.querySelector(anchor.getAttribute('href'));
+            const href = anchor.getAttribute('href');
+            if (href === '#') return;
+            const target = document.querySelector(href);
             if (target) {
+                e.preventDefault();
                 const offset = nav.offsetHeight + 20;
                 const position = target.getBoundingClientRect().top + window.scrollY - offset;
                 window.scrollTo({ top: position, behavior: 'smooth' });

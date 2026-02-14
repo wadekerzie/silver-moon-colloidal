@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Silver Moon Colloidal</title>
+    <meta name="description"
+        content="Get in touch with Silver Moon Colloidal. Request information about our generators, custom configurations, or electrode assemblies.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <nav class="nav" id="nav">
+        <div class="nav-inner">
+            <a href="index.html" class="nav-logo">
+                <img src="logo.jpg" alt="Silver Moon Colloidal" class="nav-logo-img">
+                <span>Silver Moon</span>
+            </a>
+            <div class="nav-links" id="navLinks">
+                <a href="about.html">About</a>
+                <a href="generators.html">Generators</a>
+                <a href="technology.html">Technology</a>
+                <a href="production-guide.html">Production Guide</a>
+                <a href="the-market.html">The Market</a>
+                <a href="faq.html">FAQ</a>
+                <a href="contact.html" class="nav-cta active">Get Started</a>
+            </div>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <div class="page-header">
+        <span class="section-label animate-on-scroll">Get Started</span>
+        <h1 class="page-header-title animate-on-scroll">Ready to <span class="text-accent">Generate?</span></h1>
+        <p class="page-header-subtitle animate-on-scroll">Whether you need a single generator for personal research or a
+            multi-channel system for commercial production, we're here to help you find the right configuration.</p>
+    </div>
+
+    <section class="section section-contact" id="contact">
+        <div class="container container-narrow">
+            <div class="contact-card">
+                <div class="contact-glow"></div>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-row">
+                        <div class="form-group animate-on-scroll">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required placeholder="Your name">
+                        </div>
+                        <div class="form-group animate-on-scroll">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required placeholder="you@example.com">
+                        </div>
+                    </div>
+                    <div class="form-group animate-on-scroll">
+                        <label for="interest">I'm interested in</label>
+                        <select id="interest" name="interest">
+                            <option value="">Select a generator...</option>
+                            <option value="csg1x">CSG-1X &mdash; Single Channel ($1,409)</option>
+                            <option value="csg5x">CSG-5X &mdash; Five Channel ($6,399)</option>
+                            <option value="csg10x">CSG-10X &mdash; Ten Channel (Contact Us)</option>
+                            <option value="silver-moon-pro">Silver Moon Pro &mdash; Coming Soon ($2,995)</option>
+                            <option value="electrodes">Electrode Assemblies Only</option>
+                            <option value="custom">Custom / Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group animate-on-scroll">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="4"
+                            placeholder="Tell us about your needs..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full animate-on-scroll">Send Inquiry</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid footer-grid-5">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <img src="logo.jpg" alt="Silver Moon Colloidal" class="footer-logo-img">
+                        <span>Silver Moon Colloidal</span>
+                    </div>
+                    <p>Precision colloidal silver generators engineered and manufactured in the United States.</p>
+                </div>
+                <div class="footer-links">
+                    <h5>Products</h5>
+                    <a href="generators.html">CSG-1X Generator</a>
+                    <a href="generators.html">CSG-5X Generator</a>
+                    <a href="generators.html">CSG-10X Generator</a>
+                    <a href="generators.html">Silver Moon Pro</a>
+                </div>
+                <div class="footer-links">
+                    <h5>Resources</h5>
+                    <a href="production-guide.html">Complete Production Protocol</a>
+                    <a href="technology.html#authenticity">The Science Behind The Process</a>
+                    <a href="production-guide.html">Quality Verification Guide</a>
+                    <a href="faq.html">FAQ</a>
+                </div>
+                <div class="footer-links">
+                    <h5>Learn</h5>
+                    <a href="technology.html">How It Works</a>
+                    <a href="the-market.html">The Market</a>
+                    <a href="about.html">About Us</a>
+                </div>
+                <div class="footer-links">
+                    <h5>Connect</h5>
+                    <a href="contact.html">Contact Us</a>
+                    <a href="mailto:info@silvermooncolloidal.com">Email</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Silver Moon Colloidal. All rights reserved.</p>
+                <p class="footer-disclaimer">Silver Moon Colloidal Silver Generators are custom-built for personal use,
+                    research, and development. These products have not been evaluated by the FDA and are not intended to
+                    diagnose, treat, cure, or prevent any disease.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
