@@ -241,6 +241,13 @@ ul {
     color: var(--color-accent);
 }
 
+.nav-logo-img {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
 .nav-links {
     display: flex;
     align-items: center;
@@ -1600,6 +1607,13 @@ ul {
     height: 28px;
 }
 
+.footer-logo-img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
 .footer-brand p {
     font-size: 0.85rem;
     color: var(--color-text-secondary);
@@ -1720,6 +1734,455 @@ ul {
     }
 }
 
+/* --- "70% Are Fake" Callout Banner --- */
+.callout-banner {
+    padding: 0;
+}
+
+.callout-inner {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 28px 32px;
+    background: rgba(212, 168, 71, 0.05);
+    border: 1px solid rgba(212, 168, 71, 0.2);
+    border-radius: var(--radius);
+    margin-top: -40px;
+    position: relative;
+    z-index: 3;
+}
+
+.callout-icon {
+    width: 28px;
+    height: 28px;
+    flex-shrink: 0;
+    color: #d4a847;
+    margin-top: 2px;
+}
+
+.callout-icon svg {
+    width: 100%;
+    height: 100%;
+}
+
+.callout-headline {
+    font-family: var(--font-display);
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--color-text);
+    margin-bottom: 10px;
+}
+
+.callout-text {
+    font-size: 0.88rem;
+    color: var(--color-text-secondary);
+    line-height: 1.7;
+    margin-bottom: 12px;
+}
+
+.callout-link {
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: #d4a847;
+    transition: var(--transition);
+}
+
+.callout-link:hover {
+    color: #e4b857;
+}
+
+/* --- Visual Electrode Comparison --- */
+.electrode-visual-compare {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    padding: 48px 32px;
+    background: var(--color-bg-card);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+    margin-bottom: 16px;
+}
+
+.electrode-compare-side {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    flex: 1;
+    max-width: 280px;
+}
+
+.electrode-visual-rod {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    justify-content: center;
+    height: 140px;
+}
+
+.rod-electrode {
+    width: 6px;
+    height: 100px;
+    background: linear-gradient(180deg, #666, #444);
+    border-radius: 3px;
+    box-shadow: 0 0 8px rgba(100, 100, 100, 0.3);
+}
+
+.electrode-visual-plate {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    justify-content: center;
+    height: 140px;
+}
+
+.plate-electrode {
+    width: 48px;
+    height: 120px;
+    background: linear-gradient(180deg, #c0c0c0, #a0a0a0, #c0c0c0);
+    border-radius: 4px;
+    box-shadow: 0 0 20px rgba(192, 192, 192, 0.2), inset 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+.electrode-compare-label {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--color-text);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+}
+
+.competitor-side .electrode-compare-label {
+    color: var(--color-text-muted);
+}
+
+.electrode-compare-spec {
+    font-family: var(--font-display);
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--color-text-muted);
+}
+
+.sm-side .electrode-compare-spec {
+    background: var(--gradient-accent);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.electrode-compare-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    padding: 0 16px;
+}
+
+.electrode-compare-multiplier {
+    font-family: var(--font-display);
+    font-size: 2.2rem;
+    font-weight: 600;
+    background: var(--gradient-accent);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    line-height: 1.1;
+}
+
+.electrode-compare-multiplier-sub {
+    font-size: 0.7rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--color-text-muted);
+}
+
+.electrode-compare-caption {
+    text-align: center;
+    font-size: 0.88rem;
+    color: var(--color-text-secondary);
+    max-width: 600px;
+    margin: 0 auto 64px;
+    line-height: 1.6;
+}
+
+/* --- Color Quality Test --- */
+.section-color-test {
+    background: var(--color-bg);
+}
+
+.color-test-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+    max-width: 900px;
+    margin: 0 auto 48px;
+}
+
+.color-test-bottle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 32px 24px;
+    background: var(--color-bg-card);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius);
+    transition: var(--transition);
+}
+
+.color-test-bottle:hover {
+    border-color: var(--color-border-hover);
+}
+
+.color-test-bottle-correct {
+    border-color: rgba(212, 168, 71, 0.3);
+    background: rgba(212, 168, 71, 0.04);
+}
+
+.color-test-bottle-correct:hover {
+    border-color: rgba(212, 168, 71, 0.5);
+}
+
+.bottle-visual {
+    margin-bottom: 24px;
+}
+
+.bottle-shape {
+    width: 56px;
+    height: 100px;
+    border: 2px solid rgba(255, 255, 255, 0.15);
+    border-radius: 6px 6px 12px 12px;
+    position: relative;
+    overflow: hidden;
+}
+
+.bottle-shape::before {
+    content: '';
+    position: absolute;
+    top: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 24px;
+    height: 12px;
+    border: 2px solid rgba(255, 255, 255, 0.15);
+    border-bottom: none;
+    border-radius: 4px 4px 0 0;
+}
+
+.bottle-liquid {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 75%;
+    border-radius: 0 0 10px 10px;
+}
+
+.liquid-clear {
+    background: rgba(255, 255, 255, 0.06);
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.liquid-yellow {
+    background: linear-gradient(180deg, rgba(212, 168, 71, 0.35), rgba(212, 168, 71, 0.5));
+    border-top: 1px solid rgba(212, 168, 71, 0.4);
+    box-shadow: 0 0 20px rgba(212, 168, 71, 0.15);
+}
+
+.liquid-gray {
+    background: linear-gradient(180deg, rgba(120, 120, 120, 0.3), rgba(80, 80, 80, 0.5));
+    border-top: 1px solid rgba(120, 120, 120, 0.3);
+}
+
+.bottle-label {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.bottle-result {
+    font-size: 0.9rem;
+    font-weight: 600;
+    display: block;
+}
+
+.bottle-fail {
+    color: var(--color-text-muted);
+}
+
+.bottle-pass {
+    color: #d4a847;
+}
+
+.bottle-label p {
+    font-size: 0.82rem;
+    color: var(--color-text-secondary);
+    line-height: 1.6;
+    margin: 0;
+}
+
+.color-test-explanation {
+    max-width: 650px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 24px 32px;
+    background: rgba(212, 168, 71, 0.04);
+    border: 1px solid rgba(212, 168, 71, 0.15);
+    border-radius: var(--radius);
+}
+
+.color-test-explanation p {
+    font-size: 0.9rem;
+    color: var(--color-text-secondary);
+    line-height: 1.7;
+    margin: 0;
+}
+
+/* --- Two-Stage Process Visual --- */
+.section-two-stage {
+    background: var(--color-bg);
+}
+
+.two-stage-visual {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    margin-bottom: 40px;
+}
+
+.stage-card {
+    flex: 1;
+    max-width: 320px;
+    background: var(--color-bg-card);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius);
+    padding: 32px 28px;
+    text-align: center;
+    transition: var(--transition);
+}
+
+.stage-card:hover {
+    border-color: var(--color-border-hover);
+}
+
+.stage-card-highlight {
+    border-color: rgba(212, 168, 71, 0.3);
+    background: rgba(212, 168, 71, 0.04);
+}
+
+.stage-card-highlight:hover {
+    border-color: rgba(212, 168, 71, 0.5);
+}
+
+.stage-icon {
+    width: 48px;
+    height: 48px;
+    margin: 0 auto 16px;
+    color: var(--color-accent);
+}
+
+.stage-card-highlight .stage-icon {
+    color: #d4a847;
+}
+
+.stage-icon svg {
+    width: 100%;
+    height: 100%;
+}
+
+.stage-badge {
+    display: inline-block;
+    font-size: 0.7rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    padding: 4px 12px;
+    border-radius: 50px;
+    background: rgba(139, 159, 212, 0.1);
+    color: var(--color-accent);
+    margin-bottom: 12px;
+}
+
+.stage-badge-critical {
+    background: rgba(212, 168, 71, 0.15);
+    color: #d4a847;
+}
+
+.stage-card h3 {
+    font-family: var(--font-display);
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: var(--color-text);
+}
+
+.stage-card p {
+    font-size: 0.85rem;
+    color: var(--color-text-secondary);
+    line-height: 1.6;
+    margin-bottom: 16px;
+}
+
+.stage-indicator {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    font-size: 0.78rem;
+    color: var(--color-text-muted);
+    padding-top: 12px;
+    border-top: 1px solid var(--color-border);
+}
+
+.stage-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.stage-dot-clear {
+    background: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.stage-dot-yellow {
+    background: #d4a847;
+    box-shadow: 0 0 8px rgba(212, 168, 71, 0.4);
+}
+
+.stage-arrow {
+    width: 60px;
+    flex-shrink: 0;
+    color: var(--color-accent-dim);
+    opacity: 0.5;
+}
+
+.stage-arrow svg {
+    width: 100%;
+    height: auto;
+}
+
+.two-stage-note {
+    text-align: center;
+    padding: 20px 32px;
+    background: rgba(139, 159, 212, 0.04);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.two-stage-note p {
+    font-size: 0.9rem;
+    color: var(--color-text-secondary);
+    line-height: 1.7;
+    margin: 0;
+}
+
 /* --- Responsive --- */
 @media (max-width: 1024px) {
     :root {
@@ -1779,6 +2242,19 @@ ul {
         grid-column: 1 / -1;
         max-width: 400px;
         margin: 0 auto;
+    }
+
+    .color-test-grid {
+        gap: 20px;
+    }
+
+    .electrode-visual-compare {
+        gap: 24px;
+        padding: 40px 24px;
+    }
+
+    .electrode-compare-multiplier {
+        font-size: 1.8rem;
     }
 }
 
@@ -1909,6 +2385,86 @@ ul {
 
     .testimonials-grid .testimonial-card:last-child {
         max-width: none;
+    }
+
+    /* Callout banner mobile */
+    .callout-inner {
+        flex-direction: column;
+        gap: 12px;
+        padding: 24px;
+        margin-top: -24px;
+    }
+
+    /* Electrode comparison mobile */
+    .electrode-visual-compare {
+        flex-direction: column;
+        gap: 24px;
+        padding: 32px 20px;
+    }
+
+    .electrode-compare-center {
+        padding: 0;
+    }
+
+    .electrode-compare-multiplier {
+        font-size: 1.6rem;
+    }
+
+    .electrode-visual-rod {
+        height: auto;
+        flex-direction: row;
+    }
+
+    .rod-electrode {
+        width: 6px;
+        height: 60px;
+    }
+
+    .electrode-visual-plate {
+        height: auto;
+    }
+
+    .plate-electrode {
+        width: 40px;
+        height: 80px;
+    }
+
+    /* Color test mobile */
+    .color-test-grid {
+        grid-template-columns: 1fr;
+        max-width: 360px;
+    }
+
+    .color-test-bottle {
+        flex-direction: row;
+        text-align: left;
+        gap: 20px;
+        padding: 24px;
+    }
+
+    .bottle-visual {
+        margin-bottom: 0;
+    }
+
+    .bottle-shape {
+        width: 44px;
+        height: 80px;
+    }
+
+    /* Two-stage process mobile */
+    .two-stage-visual {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .stage-card {
+        max-width: none;
+        width: 100%;
+    }
+
+    .stage-arrow {
+        transform: rotate(90deg);
+        width: 40px;
     }
 }
 

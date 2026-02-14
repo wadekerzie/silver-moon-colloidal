@@ -21,12 +21,7 @@
     <nav class="nav" id="nav">
         <div class="nav-inner">
             <a href="#hero" class="nav-logo">
-                <svg class="nav-logo-icon" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="20" cy="20" r="18" stroke="currentColor" stroke-width="1.5" />
-                    <path d="M20 2C20 2 12 10 12 20C12 30 20 38 20 38" stroke="currentColor" stroke-width="1.5" />
-                    <circle cx="20" cy="20" r="6" fill="currentColor" opacity="0.15" />
-                    <circle cx="20" cy="20" r="3" fill="currentColor" opacity="0.4" />
-                </svg>
+                <img src="logo.jpg" alt="Silver Moon Colloidal" class="nav-logo-img">
                 <span>Silver Moon</span>
             </a>
             <div class="nav-links" id="navLinks">
@@ -102,6 +97,31 @@
             <div class="hero-scroll-line"></div>
         </div>
     </section>
+
+    <!-- "70% Are Fake" Callout Box -->
+    <div class="callout-banner animate-on-scroll">
+        <div class="container">
+            <div class="callout-inner">
+                <div class="callout-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z" />
+                        <line x1="12" y1="9" x2="12" y2="13" />
+                        <line x1="12" y1="17" x2="12.01" y2="17" />
+                    </svg>
+                </div>
+                <div class="callout-content">
+                    <h3 class="callout-headline">70% of Commercial Products Aren&rsquo;t Real Colloidal Silver</h3>
+                    <p class="callout-text">A study published in the <em>International Journal of Nanomedicine</em>
+                        found that 70% of top-selling colloidal silver products contained only ionic silver &mdash;
+                        not true colloidal nanoparticles. Most manufacturers skip the critical reduction step that
+                        converts ionic silver to nanoparticles. Silver Moon provides the complete two-stage process
+                        and equipment to produce authentic colloidal silver.</p>
+                    <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC7765683/" target="_blank"
+                        rel="noopener noreferrer" class="callout-link">Read the study &rarr;</a>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- About Section — CMD 5: Added integrity paragraph -->
     <section class="section section-about" id="about">
@@ -522,6 +542,32 @@
                 </p>
             </div>
 
+            <!-- Visual Electrode Size Comparison -->
+            <div class="electrode-visual-compare animate-on-scroll">
+                <div class="electrode-compare-side competitor-side">
+                    <div class="electrode-visual-rod">
+                        <div class="rod-electrode"></div>
+                        <div class="rod-electrode"></div>
+                    </div>
+                    <span class="electrode-compare-label">Competitors</span>
+                    <span class="electrode-compare-spec">3&ndash;5 sq in</span>
+                </div>
+                <div class="electrode-compare-center">
+                    <span class="electrode-compare-multiplier">13&ndash;21x</span>
+                    <span class="electrode-compare-multiplier-sub">More Surface Area</span>
+                </div>
+                <div class="electrode-compare-side sm-side">
+                    <div class="electrode-visual-plate">
+                        <div class="plate-electrode"></div>
+                        <div class="plate-electrode"></div>
+                    </div>
+                    <span class="electrode-compare-label">Silver Moon</span>
+                    <span class="electrode-compare-spec">66 sq in</span>
+                </div>
+            </div>
+            <p class="electrode-compare-caption animate-on-scroll">Larger electrodes produce smaller, more effective
+                nanoparticles, faster production times, and last 3&ndash;7x longer than competitors.</p>
+
             <div class="electrode-grid">
                 <!-- Left: Content -->
                 <div class="electrode-content">
@@ -796,6 +842,64 @@
                             reduced to nanoparticles</p>
                     </div>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Color Quality Test Section -->
+    <section class="section section-color-test">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label animate-on-scroll">Quality Verification</span>
+                <h2 class="section-title animate-on-scroll">
+                    The Simple <span class="text-accent">Color Test</span>
+                </h2>
+                <p class="section-subtitle animate-on-scroll">
+                    True colloidal silver should be yellow or golden &mdash; not clear
+                </p>
+            </div>
+
+            <div class="color-test-grid">
+                <div class="color-test-bottle animate-on-scroll">
+                    <div class="bottle-visual bottle-clear">
+                        <div class="bottle-shape">
+                            <div class="bottle-liquid liquid-clear"></div>
+                        </div>
+                    </div>
+                    <div class="bottle-label">
+                        <span class="bottle-result bottle-fail">Ionic Silver Only</span>
+                        <p>Clear &amp; colorless. Only ionic silver present &mdash; the reduction step was skipped.</p>
+                    </div>
+                </div>
+                <div class="color-test-bottle color-test-bottle-correct animate-on-scroll">
+                    <div class="bottle-visual bottle-yellow">
+                        <div class="bottle-shape">
+                            <div class="bottle-liquid liquid-yellow"></div>
+                        </div>
+                    </div>
+                    <div class="bottle-label">
+                        <span class="bottle-result bottle-pass">True Colloidal Silver</span>
+                        <p>Yellow or golden color from nanoparticle plasmon absorption. This is the real thing.</p>
+                    </div>
+                </div>
+                <div class="color-test-bottle animate-on-scroll">
+                    <div class="bottle-visual bottle-gray">
+                        <div class="bottle-shape">
+                            <div class="bottle-liquid liquid-gray"></div>
+                        </div>
+                    </div>
+                    <div class="bottle-label">
+                        <span class="bottle-result bottle-fail">Poor Quality</span>
+                        <p>Cloudy or gray. Particles are too large and will settle out of suspension over time.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="color-test-explanation animate-on-scroll">
+                <p>If your colloidal silver is clear, you&rsquo;ve only made ionic silver (no nanoparticles).
+                    True colloidal silver nanoparticles create a yellow or golden color due to plasmon absorption
+                    &mdash; a well-documented optical phenomenon. This simple visual test tells you if you&rsquo;ve
+                    made the real thing.</p>
             </div>
         </div>
     </section>
@@ -1247,6 +1351,70 @@
         </div>
     </section>
 
+    <!-- Two-Stage Process Visual -->
+    <section class="section section-two-stage">
+        <div class="container container-narrow">
+            <div class="section-header">
+                <span class="section-label animate-on-scroll">The Process</span>
+                <h2 class="section-title animate-on-scroll">
+                    The Complete <span class="text-accent">Two-Stage Process</span>
+                </h2>
+                <p class="section-subtitle animate-on-scroll">
+                    Most manufacturers only do Stage 1 &mdash; we teach you both
+                </p>
+            </div>
+
+            <div class="two-stage-visual">
+                <div class="stage-card animate-on-scroll">
+                    <div class="stage-icon">
+                        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M24 4v8M24 36v8M8 24H4M44 24h-4" />
+                            <path d="M24 16v16" stroke-width="2" />
+                            <path d="M18 20l6-4 6 4" />
+                            <rect x="14" y="14" width="20" height="20" rx="4" stroke-dasharray="4 2" />
+                        </svg>
+                    </div>
+                    <div class="stage-badge">Stage 1</div>
+                    <h3>Electrolysis</h3>
+                    <p>All generators do this. Produces ionic silver &mdash; a clear, colorless liquid.</p>
+                    <div class="stage-indicator stage-indicator-clear">
+                        <span class="stage-dot stage-dot-clear"></span>
+                        <span>Clear liquid = ionic silver</span>
+                    </div>
+                </div>
+
+                <div class="stage-arrow animate-on-scroll">
+                    <svg viewBox="0 0 60 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="0" y1="12" x2="48" y2="12" />
+                        <polyline points="42,6 48,12 42,18" />
+                    </svg>
+                </div>
+
+                <div class="stage-card stage-card-highlight animate-on-scroll">
+                    <div class="stage-icon">
+                        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M16 8h16l4 16-12 16-12-16z" />
+                            <circle cx="24" cy="24" r="4" fill="currentColor" opacity="0.2" />
+                            <path d="M20 20l8 8M28 20l-8 8" stroke-width="1" opacity="0.5" />
+                        </svg>
+                    </div>
+                    <div class="stage-badge stage-badge-critical">Stage 2</div>
+                    <h3>Reduction</h3>
+                    <p>70% of manufacturers skip this. Converts ions to true colloidal nanoparticles.</p>
+                    <div class="stage-indicator stage-indicator-yellow">
+                        <span class="stage-dot stage-dot-yellow"></span>
+                        <span>Yellow liquid = true colloidal silver</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="two-stage-note animate-on-scroll">
+                <p>Silver Moon provides complete protocols for both stages &mdash; so you produce authentic
+                    colloidal silver nanoparticles, not just ionic silver.</p>
+            </div>
+        </div>
+    </section>
+
     <!-- FAQ Section — CMD 7: Added 3 new FAQ items -->
     <section class="section section-faq" id="faq">
         <div class="container container-narrow">
@@ -1412,6 +1580,41 @@
                         <p>No. Silver Moon colloidal silver generators are custom-built instruments designed for
                             personal use, research, and development. They are not medical devices, and the colloidal
                             silver produced is not intended to diagnose, treat, cure, or prevent any disease.</p>
+                    </div>
+                </div>
+                <div class="faq-item animate-on-scroll">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>How do I know if I&rsquo;ve made real colloidal silver?</span>
+                        <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="12" y1="5" x2="12" y2="19" />
+                            <line x1="5" y1="12" x2="19" y2="12" />
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>The simple color test: true colloidal silver should be <span class="text-yellow">yellow
+                                or golden</span> due to nanoparticle plasmon absorption. If your solution is clear,
+                            you&rsquo;ve only made ionic silver (no nanoparticles). If it&rsquo;s cloudy gray, the
+                            particles are too large and will settle out. Yellow or golden color means you&rsquo;ve
+                            made the real thing. For commercial production, we also recommend third-party UV-Vis
+                            spectroscopy testing to confirm the plasmon absorption band.</p>
+                    </div>
+                </div>
+                <div class="faq-item animate-on-scroll">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>Do you teach me how to make colloidal silver, or just sell equipment?</span>
+                        <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="12" y1="5" x2="12" y2="19" />
+                            <line x1="5" y1="12" x2="19" y2="12" />
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Both. Every Silver Moon generator includes our complete production protocol covering the
+                            two-stage process (electrolysis + reduction), quality verification, troubleshooting, and
+                            storage best practices. We&rsquo;re not just selling equipment &mdash; we&rsquo;re
+                            teaching you the science of producing authentic colloidal silver. This is the critical
+                            difference: 70% of manufacturers sell equipment without teaching the complete process,
+                            which is why most commercial products are just ionic silver mislabeled as colloidal
+                            silver.</p>
                     </div>
                 </div>
                 <!-- New Electrode-Focused FAQs -->
@@ -1585,13 +1788,7 @@
             <div class="footer-grid footer-grid-5">
                 <div class="footer-brand">
                     <div class="footer-logo">
-                        <svg class="nav-logo-icon" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="20" cy="20" r="18" stroke="currentColor" stroke-width="1.5" />
-                            <path d="M20 2C20 2 12 10 12 20C12 30 20 38 20 38" stroke="currentColor"
-                                stroke-width="1.5" />
-                            <circle cx="20" cy="20" r="6" fill="currentColor" opacity="0.15" />
-                            <circle cx="20" cy="20" r="3" fill="currentColor" opacity="0.4" />
-                        </svg>
+                        <img src="logo.jpg" alt="Silver Moon Colloidal" class="footer-logo-img">
                         <span>Silver Moon Colloidal</span>
                     </div>
                     <p>Precision colloidal silver generators engineered and manufactured in the United States.</p>
